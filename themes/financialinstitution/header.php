@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Digital Team HTML5 Layout - Tooplate</title>
+	<title>Nexus Financial Institute</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="keywords" content="">
@@ -54,13 +54,13 @@ http://www.tooplate.com/view/2075-digital-team
 				<span class="icon icon-bar"></span>
 				<span class="icon icon-bar"></span>
 			</button>
-			<a href="#" class="navbar-brand">Digital Team</a>
+			<a href="<?php echo site_url('/') ?>" class="navbar-brand">Nexus Financial Institute</a>
 		</div>
 		<div class="collapse navbar-collapse">
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="#home" class="smoothScroll">HOME</a></li>
+				<li><a href="<?php echo site_url('/') ?>" class="smoothScroll">HOME</a></li>
 				<li><a href="#work" class="smoothScroll">WORK</a></li>
-				<li><a href="#about" class="smoothScroll">ABOUT</a></li>
+				<li><a href="<?php echo site_url('/about-us') ?>" class="smoothScroll">ABOUT</a></li>
 				<li><a href="#team" class="smoothScroll">TEAM</a></li>
 				<li><a href="#portfolio" class="smoothScroll">PORTFOLIO</a></li>
 				<li><a href="#pricing" class="smoothScroll">PRICING</a></li>
