@@ -1,6 +1,6 @@
 <!-- footer section -->
 <footer>
-    <?php wp_footer() ?>
+	<?php wp_footer() ?>
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 col-sm-12">
@@ -19,15 +19,15 @@
 </footer>
 
 
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/smoothscroll.js"></script>
-<script src="js/isotope.js"></script>
-<script src="js/imagesloaded.min.js"></script>
-<script src="js/nivo-lightbox.min.js"></script>
-<script src="js/jquery.backstretch.min.js"></script>
-<script src="js/wow.min.js"></script>
-<script src="js/custom.js"></script>
+<script src="<?php echo get_theme_file_uri().'/js/jquery.js' ?>"></script>
+<script src="<?php echo get_theme_file_uri().'/js/bootstrap.min.js' ?>"></script>
+<script src="<?php echo get_theme_file_uri().'/js/smoothscroll.js' ?>"></script>
+<script src="<?php echo get_theme_file_uri().'/js/isotope.js' ?>"></script>
+<script src="<?php echo get_theme_file_uri().'/js/imagesloaded.min.js' ?>"></script>
+<script src="<?php echo get_theme_file_uri().'/js/nivo-lightbox.min.js' ?>"></script>
+<script src="<?php echo get_theme_file_uri().'/js/jquery.backstretch.min.js' ?>"></script>
+<script src="<?php echo get_theme_file_uri().'/js/wow.min.js' ?>"></script>
+<script src="<?php echo get_theme_file_uri().'/js/custom.js' ?>"></script>
 
 </body>
 </html>

@@ -1,4 +1,3 @@
-<?php wp_head() ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,14 +14,17 @@ Template 2075 Digital Team
 http://www.tooplate.com/view/2075-digital-team
 
 -->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/animate.min.css">
-	<link rel="stylesheet" href="css/et-line-font.css">
-	<link rel="stylesheet" href="css/nivo-lightbox.css">
-	<link rel="stylesheet" href="css/nivo_themes/default/default.css">
-	<link rel="stylesheet" href="css/style.css">
+
+	<link rel="stylesheet" href="<?php echo get_theme_file_uri().'/css/bootstrap.min.css' ?>">
+	<link rel="stylesheet" href="<?php echo get_theme_file_uri().'/css/font-awesome.min.css' ?>">
+	<link rel="stylesheet" href="<?php echo get_theme_file_uri().'/css/animate.min.css' ?>">
+	<link rel="stylesheet" href="<?php echo get_theme_file_uri().'/css/et-line-font.css' ?>">
+	<link rel="stylesheet" href="<?php echo get_theme_file_uri().'/css/nivo-lightbox.css' ?>">
+	<link rel="stylesheet" href="<?php echo get_theme_file_uri().'/css/nivo_themes/default/default.css' ?>">
+	<link rel="stylesheet" href="<?php echo get_theme_file_uri().'/css/style.css' ?>">
+
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
+	<?php wp_head() ?>
 </head>
 <body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
 <!-- preloader section -->
