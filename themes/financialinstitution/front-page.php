@@ -6,7 +6,7 @@
 		<div class="row">
 			<div class="col-md-12 col-sm-12">
 				<h3>FINANCIAL CONSULTING / INVESTMENT MANAGEMENT / LOANS</h3>
-				<h1>DIGITAL TEAM</h1>
+				<h1>NEXUS FINANCIAL INSTITUTION</h1>
 				<hr>
 				<a href="#work" class="smoothScroll btn btn-danger">What we do</a>
 				<a href="#contact" class="smoothScroll btn btn-default">Talk to us</a>

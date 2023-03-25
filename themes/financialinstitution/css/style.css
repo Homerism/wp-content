@@ -710,3 +710,69 @@ media quires for mobile
     font-size: 12px;
   }
 }
+
+/* Sidebar */
+
+
+
+.sidebar {
+    padding-left: 30px;
+}
+
+.widget + .widget {
+    margin-top: 60px;
+}
+
+.widget-title {
+    font-size: 18px;
+    margin: 0 0 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;   
+}
+
+.widget .list-unstyled a:hover {
+    padding-left: 15px;
+}
+
+.widget .list-unstyled li + li {
+    margin-top: 20px;
+}
+
+.widget-categories li a span {
+    float: right;
+}
+
+.widget-tags .list-unstyled li + li {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(38,41,44,0.05)
+}
+
+/*Split Screen */
+.split {
+  height: 100%;
+  width: 50%;
+  position: relative;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 30px;
+}
+
+/* Control the left side */
+.left {
+  left: 100px;
+  float:left;
+  text-align: left;
+}
+
+/* Control the right side */
+.right {
+  left: 300px;
+  float:right;
+}
+
+/*Backwards Nav */
+
+
+

@@ -15,6 +15,7 @@
 <!-- About section ----->
 <section id="about">
   <!-------BreadCrumb Backward Navigation START (still have to edit)-------->
+  
   <div class="container container--narrow page-section"> <?php
 $theParent = wp_get_post_parent_ID(get_the_ID());
 if($theParent){ ?>
@@ -28,6 +29,7 @@ if($theParent){ ?>
     </div> <?php } ?>
     <!--Parent if statment ends-->
   </div>
+
   <!-------BreadCrumb Backward Navigation END-------->
   <!-------BreadCrumb Side Bar Navigation START------>
   <?php

@@ -17,6 +17,7 @@
 	<link rel="stylesheet" href="<?php echo get_theme_file_uri().'/css/nivo_themes/default/default.css' ?>">
 	<link rel="stylesheet" href="<?php echo get_theme_file_uri().'/css/style.css' ?>">
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
 <!-- preloader section -->
@@ -51,12 +52,12 @@
 		<div class="collapse navbar-collapse">
 			<ul class="nav navbar-nav navbar-right">
 				<li><a href="<?php echo site_url('/') ?>" class="smoothScroll">HOME</a></li>
-				<li><a href="#work" class="smoothScroll">WORK</a></li>
 				<li><a href="<?php echo site_url('/about-us') ?>" class="smoothScroll">ABOUT</a></li>
+				<li><a href="<?php echo site_url('/resources') ?>" class="smoothScroll">RESOURCES</a></li>
+				<li><a href="#work" class="smoothScroll">WORK</a></li>
 				<li><a href="#team" class="smoothScroll">TEAM</a></li>
 				<li><a href="#portfolio" class="smoothScroll">PORTFOLIO</a></li>
 				<li><a href="#pricing" class="smoothScroll">PRICING</a></li>
-				<li><a href="#contact" class="smoothScroll">CONTACT</a></li>
 			</ul>
 		</div>
 	</div>
