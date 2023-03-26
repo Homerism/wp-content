@@ -19,7 +19,7 @@
     <p><?php the_content()?></p>
     <div class="post-meta">
     <span class="post-autor">
-            <a href=""><i class="fa fa-user-circle" aria-hidden="true"></i><?php echo get_the_author(); ?></a>
+            <a href=""><i class="fa fa-user-circle" aria-hidden="true"></i><?php the_author_posts_link(); ?></a>
             </span>
         <span class="post-date">
             <a href=""><i class="fa fa-calendar" aria-hidden="true"></i><?php the_time('F j, Y'); ?></a>
