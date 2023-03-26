@@ -26,6 +26,30 @@ function financial_features(){
     register_nav_menu('headerMenuLocation', 'Header Menu Location');
  }
 
+// Customize pagination links with custom CSS and HTML
+function custom_paginate_links() {
+    global $wp_query;
+    $big = 999999999;
+    $links = paginate_links( array(
+        'base'      => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
+        'format'    => '?paged=%#%',
+        'current'   => max( 1, get_query_var('paged') ),
+        'total'     => $wp_query->max_num_pages,
+        'type'      => 'array',
+        'prev_text' => '&laquo;',
+        'next_text' => '&raquo;',
+    ) );
+    if ( $links ) {
+        echo '<ul class="pagination">';
+        foreach ( $links as $link ) {
+            echo '<li>' . $link . '</li>';
+        }
+        echo '</ul>';
+    }
+}
+
+
 add_action('wp_enqueue_scripts', 'financial_files'); // type of instruction for WordPress to run, function name to run
 add_action('after_setup_theme', 'financial_features');
+add_action('after_setup_theme', 'custom_paginate_links');
 ?>

@@ -776,3 +776,157 @@ media quires for mobile
 
 
 
+
+
+
+
+
+
+
+/*EVENTS */
+/* Styling the three events section */
+        section .events {
+            position: relative;
+			padding-top: 120px;
+            width: 80%; 
+            height: 100%;
+            box-sizing: border-box;
+			margin-left: auto;
+			margin-right: auto;
+
+        }
+          
+        /* Styling the links of
+        the events section */
+        section .events ul {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            margin: 0;
+            padding: 40px;
+            box-sizing: border-box;
+        }
+          
+        /* Styling the lists of the event section */
+        section .events ul li {
+            list-style: none;
+            background: #fff;
+            box-sizing: border-box;
+            height: 200px;
+            margin: 15px 0;
+        }
+          
+        /* Styling the time class of events section */
+        section .events ul li .time {
+            position: relative;
+            padding: 20px;
+            background: #262626;
+            box-sizing: border-box;
+            width: 30%;
+            height: 100%;
+            float: left;
+            text-align: center;
+            transition: .5s;
+        }
+          
+        /* Styling the hover effect
+            of events section */
+        section .events ul li:hover .time {
+            background: #00c6d7;
+        }
+          
+        /* Styling the header of time
+            class of events section */
+        section .events ul li .time h2 {
+            position: relative;
+            margin: 0;
+            padding: 0;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            font-size: 60px;
+            line-height: 30px;
+        }
+          
+        /* Styling the texts of time
+        class of events section */
+        section .events ul li .time h2 span {
+            font-size: 30px;
+        }
+          
+        /* Styling the details
+        class of events section */
+        section .events ul li .details {
+            padding: 20px;
+            background: #fff;
+            box-sizing: border-box;
+            width: 70%;
+            height: 100%;
+            float: left;
+        }
+          
+        /* Styling the header of the
+        details class of events section */
+        section .events ul li .details h3 {
+            position: relative;
+            margin: 0;
+            padding: 0;
+            font-size: 22px;
+        }
+          
+        /* Styling the lists of details
+        class of events section */
+        section .events ul li .details p {
+            position: relative;
+            margin: 10px 0 0;
+            padding: 0;
+            font-size: 16px;
+        }
+          
+        /* Styling the links of details
+        class of events section */
+        section .events ul li .details a {
+            display: inline-block;
+            text-decoration: none;
+            padding: 10px 15px;
+            border: 1.5px solid #262626;
+            margin-top: 8px;
+            font-size: 18px;
+            transition: .5s;
+        }
+          
+        /* Styling the details class's hover effect */
+        section .events ul li .details a:hover {
+            background: #00c6d7;
+            color: #fff;
+            border-color: #00c6d7;
+        }
+
+/*Pagination */
+	
+.center {
+  text-align: center;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.pagination li {
+    margin: 0 10px;
+}
+
+.pagination a {
+    color: #00c6d7;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+}
+
+.pagination .current a {
+    background-color: #00c6d7;
+    color: #fff;
+}

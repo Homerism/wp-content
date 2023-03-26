@@ -60,7 +60,9 @@
             <?php } ?>
 		</div>
 	</div>
-    <?php echo paginate_links(); ?>
+    <div class="center">
+		<?php custom_paginate_links(); ?>
+	</div>
 </section>
 
 <?php get_footer() ?>
