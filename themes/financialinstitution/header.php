@@ -55,10 +55,14 @@
 				<li><a href="<?php echo site_url('/about-us') ?>" class="smoothScroll">ABOUT</a></li>
 				<li><a href="<?php echo site_url('/resources') ?>" class="smoothScroll">RESOURCES</a></li>
 				<li><a href="<?php echo site_url('/events') ?>" class="smoothScroll">EVENTS</a></li>
+				<li><a href="<?php echo site_url('/services') ?>" class="smoothScroll">SERVICES</a></li>
+
+				<!--
 				<li><a href="#work" class="smoothScroll">WORK</a></li>
 				<li><a href="#team" class="smoothScroll">TEAM</a></li>
 				<li><a href="#portfolio" class="smoothScroll">PORTFOLIO</a></li>
 				<li><a href="#pricing" class="smoothScroll">PRICING</a></li>
+				-->
 			</ul>
 		</div>
 	</div>
