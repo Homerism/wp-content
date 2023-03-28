@@ -33,7 +33,9 @@ register_post_type('service',array(
 ));
 
 register_post_type('member',array(
-    'supports' => array('title', 'editor', 'thumbnail'),
+    'rewrite'=> array('slug' => 'members' ),
+    'supports' => array('title', 'editor', 'thumbnail','excerpt'),
+    'has_archive' => true,
     'public' => true,
     'labels' => array(
     'name' => "Members",

@@ -930,3 +930,12 @@ media quires for mobile
     background-color: #00c6d7;
     color: #fff;
 }
+
+/*Service Page */
+.services {
+  position: relative;
+  right: 0px;
+  left: 150px;
+  width: 1000px;
+  text-align:center;
+}

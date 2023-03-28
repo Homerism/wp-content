@@ -57,14 +57,26 @@ function financial_adjust_queries($query){
                    AND $query->is_main_query()){
         $query->set('orderby', 'title');
         $query->set('order', 'ASC');
-        $query->set('posts_per_page', -1);
+        $query->set('posts_per_page', 3);
         
         wp_reset_postdata();
     }
  }
- add_action('pre_get_posts', 'financial_adjust_queries');
+
+ function financial_adjust_members($query){
+    if(!is_admin() AND is_post_type_archive('member')
+                   AND $query->is_main_query()){
+        $query->set('orderby', 'title');
+        $query->set('order', 'ASC');
+        $query->set('posts_per_page', 4);
+        
+        wp_reset_postdata();
+    }
+ }
 
 
+add_action('pre_get_posts', 'financial_adjust_members');
+add_action('pre_get_posts', 'financial_adjust_queries');
 add_action('wp_enqueue_scripts', 'financial_files'); // type of instruction for WordPress to run, function name to run
 add_action('after_setup_theme', 'financial_features');
 add_action('after_setup_theme', 'custom_paginate_links');
