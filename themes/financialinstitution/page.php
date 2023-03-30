@@ -1,15 +1,16 @@
-<?php get_header() ?> <?php global $child_pages; ?>
+<?php get_header() ?> 
+<?php global $child_pages; ?>
 <!---Banner here-------->
 <section id="home">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 col-sm-12">
-        <h1> <?php the_title(); ?> </h1>
-        <hr>
-        <p>This subtitle has to be replaced soon, peter piper picked a pepper</p>
-      </div>
-    </div>
-  </div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12">
+				<h1 style="text-transform: uppercase;"><?php the_title(); ?></h1>
+				<hr>
+				<a href="<?php echo site_url('/questions');?>" class="smoothScroll btn btn-default">Frequently Asked Questions</a>
+			</div>
+		</div>
+	</div>		
 </section>
 <!---Banner ENDS Here--->
 <!-- About section ----->

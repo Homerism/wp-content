@@ -28,6 +28,15 @@
             <a href=""><i class="fa fa-folder" aria-hidden="true"></i><?php echo get_the_category_list(', ') ?></a>
         </span>
     </div><!-- /.post-meta -->
+    <section>
+<?php
+// Check if comments are open or if there are comments already.
+if ( comments_open() || get_comments_number() ) {
+  // Load the comments template.
+  comments_template();
+}
+?>
+</section>
 </div><!-- /.post-content -->
 
 <div class="split right">
@@ -54,5 +63,6 @@
     </ul>  
 </div><!-- /All-categories -->
 </div>
+
 
 <?php get_footer() ?>

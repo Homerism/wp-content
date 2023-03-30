@@ -20,7 +20,13 @@
 				<div class="img-responsive"><?php the_post_thumbnail('memberPortrait');?></div>
 				<div class="team-des">
 					<a href="<?php the_permalink(); ?>" style="color:white"><h4><?php the_title(); ?></h4></a>
-					<h3>REPLACE</h3>
+					<h3><?php $memberTitle = get_field('member_title');
+					if($memberTitle){
+						echo $memberTitle;
+					}else {
+						echo "Nexus Employee";
+						} ?>
+					</h3>
 					<hr>
 					<ul class="social-icon">
 						<li><a href="#" class="fa fa-facebook wow fadeIn" data-wow-delay="0.3s"></a></li>
@@ -56,7 +62,6 @@
                             <h3><?php echo get_the_title($service);?></h3> 
                             </a>
                             <hr>
-                            
                             <p><?php $mypost = get_post($service->ID); 
                             echo apply_filters('related_services',$mypost->post_content);?></p>
                         </div>

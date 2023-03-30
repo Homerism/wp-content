@@ -1,8 +1,9 @@
 <?php
 
-
 function financial_post_types(){
     register_post_type('event',array(
+        'capability_type' => 'event', 
+        'map_meta_cap'=> true,  
         'rewrite'=> array('slug' => 'events' ),
         'supports' => array('title', 'editor','excerpt'),
         'has_archive' => true,
@@ -18,6 +19,8 @@ function financial_post_types(){
 ));
 
 register_post_type('service',array(
+    'capability_type' => 'service',
+    'map_meta_cap'=> true,
     'rewrite'=> array('slug' => 'services' ),
     'supports' => array('title', 'editor','excerpt'),
     'has_archive' => true,
@@ -47,6 +50,20 @@ register_post_type('member',array(
     'menu_icon' => 'dashicons-businessperson'
     ));
 
+    register_post_type('question',array(
+        'rewrite'=> array('slug' => 'questions' ),
+        'supports' => array('title', 'editor', 'thumbnail','excerpt'),
+        'has_archive' => true,
+        'public' => true,
+        'labels' => array(
+        'name' => "Questions",
+        'add_new_item' => 'Add New Question',
+        'edit_item' => 'Edit Question',
+        'all_items' => 'All Question',
+        'singular_name' => "Question"
+        ),
+        'menu_icon' => 'dashicons-arker'
+        ));
 }
 
 add_action('init', 'financial_post_types');

@@ -37,7 +37,6 @@
        <div class="sk-circle12 sk-circle"></div>
     </div>
 </div>
-
 <!-- navigation section -->
 <section class="navbar navbar-fixed-top custom-navbar" role="navigation">
 	<div class="container">
@@ -57,13 +56,16 @@
 				<li><a href="<?php echo site_url('/events') ?>" class="smoothScroll">EVENTS</a></li>
 				<li><a href="<?php echo site_url('/services') ?>" class="smoothScroll">SERVICES</a></li>
 				<li><a href="<?php echo site_url('/members') ?>" class="smoothScroll">MEET THE TEAM</a></li>
-
-				<!--
-				<li><a href="#work" class="smoothScroll">WORK</a></li>
-				<li><a href="#team" class="smoothScroll">TEAM</a></li>
-				<li><a href="#portfolio" class="smoothScroll">PORTFOLIO</a></li>
-				<li><a href="#pricing" class="smoothScroll">PRICING</a></li>
-				-->
+				<?php
+				if(is_user_logged_in()){
+					?>
+					<li><a href="<?php echo wp_logout_url(); ?>" class="smoothScroll">LOGOUT</a></li>
+				<?php }
+				else{ ?>
+				<li><a href="<?php echo esc_url(site_url('/wp-login.php')); ?>" class="smoothScroll">LOGIN</a></li>
+				<li><a href="<?php echo esc_url(site_url('/wp-signup.php')); ?>" class="smoothScroll">SIGN UP</a></li>
+				<?php }
+				?>
 			</ul>
 		</div>
 	</div>
