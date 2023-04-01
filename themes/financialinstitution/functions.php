@@ -51,6 +51,16 @@ function custom_paginate_links() { // Customize pagination links with custom CSS
     }
 }
 
+function financial_adjust_events($query){
+    if(!is_admin() AND is_post_type_archive('event') AND $query->is_main_query()){
+        $query->set('orderby', 'event_date');
+        $query->set('order', 'ASC');
+        $query->set('posts_per_page', 4);
+        
+        wp_reset_postdata();
+    }
+ }
+
 function financial_adjust_queries($query){
     if(!is_admin() AND is_post_type_archive('service')
                    AND $query->is_main_query()){
@@ -115,7 +125,8 @@ function ourLoginCSS(){
     wp_enqueue_style('university_main_styles',get_stylesheet_uri());
     wp_enqueue_style('custom-google-font','https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,300,400,400i,700,700i');
  }
-   
+
+add_action('pre_get_posts', 'financial_adjust_events');
 add_action('pre_get_posts', 'financial_adjust_members');
 add_action('pre_get_posts', 'financial_adjust_queries');
 add_action('pre_get_posts', 'financial_adjust_questions');

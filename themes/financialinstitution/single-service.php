@@ -1,5 +1,4 @@
 <?php get_header() ?>
-
 <section id="home">
 <div class="container">
 <div class="row">
@@ -19,12 +18,10 @@
     </div>
   </div>
 </section>
-
 <div class="services">
   <!----the contnet--->
           <p><?php the_content()?></p>
 </div><!-- /.post-content -->
-
 <?php
     $members = new WP_Query(array(
       'posts_per_page' => -1,
@@ -81,5 +78,4 @@
   ?>
 </div>
 </section>
-
 <?php get_footer() ?>

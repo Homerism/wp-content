@@ -12,7 +12,6 @@
 		</div>
 	</div>		
 </section>
-
 <!-- work section -->
 <section id="work">
 	<div class="container">
@@ -42,5 +41,32 @@
 				<?php custom_paginate_links(); ?>
 			</div>
 	</div>
+	<section class="testimonials">
+	<h1 class="heading bold">TESTIMONIALS</h1>
+	<hr>
+  <div>
+    <ul id="testimonials-ul">
+	<?php
+	$testimony = new WP_Query(array(
+		'posts_per_page' => -1,
+		'post_type' => 'testimonial'
+	));
+	
+	if($testimony){
+	while($testimony->have_posts()){
+		$testimony->the_post();
+		?>
+      <li>
+        <p><?php the_content(); ?></p>
+        <small>- <?php the_title(); ?></small>
+      </li>
+      <?php }} ?>
+    </ul>
+  </div>
+  <div class="testimonials-control">
+    <i class="fa fa-angle-left fa-2x" id="testimonials-l"></i>
+    <i class="fa fa-angle-right fa-2x" id="testimonials-r"></i>
+  </div>
+</section>
 </section>
 <?php get_footer(); ?>
