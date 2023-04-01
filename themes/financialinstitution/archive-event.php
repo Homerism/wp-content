@@ -7,16 +7,15 @@
 				<h3>SEMINARS / WORKSHOPS / MEETINGS</h3>
 				<h1>WELCOME TO OUR EVENTS</h1>
 				<hr>
-				<a href="#contact" class="smoothScroll btn btn-default">Talk to us</a>
+				<a href="#events" class="smoothScroll btn btn-danger">Our Events</a>
+				<a href="#gallery" class="smoothScroll btn btn-default">Photo Gallery</a>
 			</div>
 		</div>
 	</div>		
 </section>
 
-<section>
-	<div class="events">
-
-	<!---Reminder to sort events from latest--->
+<section id="events">
+<div class="events">
 		<?php 
 		while(have_posts()){
 			the_post();
@@ -58,6 +57,31 @@
 				<?php custom_paginate_links(); ?>
 			</div>
         </div>
+	</section>
+	<section id="gallery">
+	<div id="carousel">
+	<div class="slideImg hideLeft">
+		<img src="https://i1.sndcdn.com/artworks-000165384395-rhrjdn-t500x500.jpg">
+	</div>
+	<div class="slideImg prevLeftSecond">
+		<img src="https://i1.sndcdn.com/artworks-000185743981-tuesoj-t500x500.jpg">
+	</div>
+	<div class="slideImg prev">
+		<img src="https://i1.sndcdn.com/artworks-000158708482-k160g1-t500x500.jpg">
+	</div>
+	<div class="slideImg selected">
+		<img src="https://i1.sndcdn.com/artworks-000062423439-lf7ll2-t500x500.jpg">
+	</div>
+	<div class="slideImg next">
+		<img src="https://i1.sndcdn.com/artworks-000028787381-1vad7y-t500x500.jpg">
+	</div>
+	<div class="slideImg nextRightSecond">
+		<img src="https://i1.sndcdn.com/artworks-000108468163-dp0b6y-t500x500.jpg">
+	</div>
+	<div class="slideImg hideRight">
+		<img src="https://i1.sndcdn.com/artworks-000064920701-xrez5z-t500x500.jpg">
+	</div>
+</div>
 	</section>
 
 <?php get_footer() ?>

@@ -62,8 +62,36 @@ register_post_type('member',array(
         'all_items' => 'All Question',
         'singular_name' => "Question"
         ),
-        'menu_icon' => 'dashicons-arker'
+        'menu_icon' => 'dashicons-marker'
         ));
+
+        register_post_type('testimonial',array(
+            'supports' => array('title', 'editor'),
+            'public' => true,
+            'labels' => array(
+            'name' => "Testimonials",
+            'add_new_item' => 'Add New Testimony',
+            'edit_item' => 'Edit Testimony',
+            'all_items' => 'All Testimonies',
+            'singular_name' => "Testimonies"
+            ),
+            'menu_icon' => 'dashicons-marker'
+            ));
+        
+        register_post_type('calculator',array(
+            'rewrite'=> array('slug' => 'calculation' ),
+            'supports' => array('title', 'editor'),
+            'has_archive' => true,
+            'public' => true,
+            'labels' => array(
+                'name' => "Calculator",
+                'add_new_item' => 'Add New Calculator',
+                'edit_item' => 'Edit Calculator',
+                'all_items' => 'All Calculators',
+                'singular_name' => "Calculator"
+                ),
+                'menu_icon' => 'dashicons-marker'
+            ));
 }
 
 add_action('init', 'financial_post_types');

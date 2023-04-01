@@ -6,13 +6,14 @@
 			<div class="col-md-12 col-sm-12">
 				<h1>EVENT: <?php the_title(); ?></h1>
 				<hr>
-				<a href="<?php echo get_post_type_archive_link('event');?>" class="smoothScroll btn btn-default">ALL EVENTS</a>
+				<a href="<?php echo get_post_type_archive_link('event');?>" class="smoothScroll btn btn-danger">ALL EVENTS</a>
+				<a href="#events" class="smoothScroll btn btn-default">More Details</a>
 			</div>
 		</div>
 	</div>		
 </section>
 
-<section>
+<section id="events">
 	<div class="events">
 		<?php while(have_posts()){
 			the_post();

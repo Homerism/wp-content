@@ -7,7 +7,7 @@
 				<h3>HARDWORKING / DEDICATED / TRUSTWORTHY</h3>
 				<h1>MEET THE NEXUS TEAM</h1>
 				<hr>
-				<a href="#contact" class="smoothScroll btn btn-default">Contact Us</a>
+				<a href="#team" class="smoothScroll btn btn-danger">Team Members</a>
 			</div>
 		</div>
 	</div>		

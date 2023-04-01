@@ -7,7 +7,7 @@
 				<h1 style="text-transform: uppercase;">TEAM MEMBER: <?php the_title(); ?></h1>
 				<hr>
                 <a href="<?php echo site_url('/members')?>" class="smoothScroll btn btn-danger">Meet The Team</a>
-				<a href="#contact" class="smoothScroll btn btn-default">Contact Us</a>
+				<a href="#team" class="smoothScroll btn btn-default">Member Details</a>
 			</div>
 		</div>
 	</div>		
@@ -63,7 +63,8 @@
                             </a>
                             <hr>
                             <p><?php $mypost = get_post($service->ID); 
-                            echo apply_filters('related_services',$mypost->post_content);?></p>
+							echo wp_trim_words(apply_filters('related_services',$mypost->post_content),30); ?>
+						</p>
                         </div>
                     <?php }} ?>
             </section>

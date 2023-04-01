@@ -1,5 +1,6 @@
 <?php get_header() ?> 
-<?php global $child_pages; ?>
+<?php global $child_pages;
+ ?>
 <!---Banner here-------->
 <section id="home">
 	<div class="container">
@@ -7,18 +8,17 @@
 			<div class="col-md-12 col-sm-12">
 				<h1 style="text-transform: uppercase;"><?php the_title(); ?></h1>
 				<hr>
-				<a href="<?php echo site_url('/questions');?>" class="smoothScroll btn btn-default">Frequently Asked Questions</a>
+          <a href="#about" class="smoothScroll btn btn-danger"><?php the_title(); ?></a>
+        <a href="<?php echo site_url('/questions');?>" class="smoothScroll btn btn-default">  F.A.Q  </a>
 			</div>
 		</div>
 	</div>		
 </section>
 <!---Banner ENDS Here--->
-<!-- About section ----->
-<section id="about">
   <!-------BreadCrumb Backward Navigation START (still have to edit)-------->
   
   <div class="container container--narrow page-section"> <?php
-$theParent = wp_get_post_parent_ID(get_the_ID());
+  $theParent = wp_get_post_parent_ID(get_the_ID());
 if($theParent){ ?>
     <!---Parent If statement starts-->
     <div class="metabox metabox--position-up metabox--with-home-link">
@@ -30,11 +30,12 @@ if($theParent){ ?>
     </div> <?php } ?>
     <!--Parent if statment ends-->
   </div>
+<section id="about">
 
   <!-------BreadCrumb Backward Navigation END-------->
   <!-------BreadCrumb Side Bar Navigation START------>
+   <!-- About section ----->
   <?php
-  
 if($theParent==0){ ?>
   <!--Query for child pages Start--> <?php
 if($theParent){ 
@@ -87,6 +88,8 @@ else{
     </div>
   </div>
   <!------------------Side Breadcrum navigation END------>
+
+
   <!-- contact section -->
   <section id="contact">
     <div class="container">

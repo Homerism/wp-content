@@ -7,7 +7,8 @@
 				<h3>LOANS / MORTGAGES / WEALTH MANAGEMENT</h3>
 				<h1>SERVICES WE PROVIDE</h1>
 				<hr>
-				<a href="#contact" class="smoothScroll btn btn-default">Talk to us</a>
+				<a href="#work" class="smoothScroll btn btn-danger">Our Services</a>
+				<a href="#test" class="smoothScroll btn btn-default">Service Testimonies</a>
 			</div>
 		</div>
 	</div>		
@@ -41,6 +42,7 @@
 				<?php custom_paginate_links(); ?>
 			</div>
 	</div>
+	<section id="test">
 	<section class="testimonials">
 	<h1 class="heading bold">TESTIMONIALS</h1>
 	<hr>
@@ -67,6 +69,7 @@
     <i class="fa fa-angle-left fa-2x" id="testimonials-l"></i>
     <i class="fa fa-angle-right fa-2x" id="testimonials-r"></i>
   </div>
+</section>
 </section>
 </section>
 <?php get_footer(); ?>

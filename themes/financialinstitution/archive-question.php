@@ -8,12 +8,12 @@
 				<h1>FREQUENTLY ASKED QUESTIONS</h1>
 				<hr>
 				<a href="<?php echo site_url('/about-us');?>" class="smoothScroll btn btn-default">About Us</a>
+				<a href="#question" class="smoothScroll btn btn-default">FAQ</a>
 			</div>
 		</div>
 	</div>		
 </section>
-
-
+<section id="question">
 <?php while(have_posts()){
 	the_post();
 	?>
@@ -22,5 +22,6 @@
 		<p><?php the_content(); ?></p>
 	</div>
 <?php }?>
+</section>
 
 <?php get_footer() ?>

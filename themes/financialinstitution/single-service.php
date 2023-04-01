@@ -5,7 +5,8 @@
 <div class="col-md-12 col-sm-12">
   <h1 style="text-transform: uppercase;">SERVICE: <?php the_title(); ?></h1>
   <hr>
-  <a href="<?php echo site_url('/services')?>" class="smoothScroll btn btn-default">All Services</a>
+  <a href="<?php echo site_url('/services')?>" class="smoothScroll btn btn-danger">All Services</a>
+				<a href="#team" class="smoothScroll btn btn-default">Service Details</a>
 </div>
 </div>
 </div>		
