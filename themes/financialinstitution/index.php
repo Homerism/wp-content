@@ -7,8 +7,7 @@
 				<h3>ASSESTS ADVICE / INVESTMENTS TIPS / BUDGETING TIPS</h3>
 				<h1>WELCOME TO OUR FINANCIAL RESOURCE</h1>
 				<hr>
-				<a href="#work" class="smoothScroll btn btn-danger">What we do</a>
-				<a href="#contact" class="smoothScroll btn btn-default">Talk to us</a>
+				<a href="#work" class="smoothScroll btn btn-danger">Financial Resources</a>
 			</div>
 		</div>
 	</div>		

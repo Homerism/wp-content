@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html <?php language_attributes(); ?> >
 <head>
+<meta name="viewport" content="width=device-width, initial-scale =1">
+<meta charset="<?php bloginfo('charset'); ?>">
 <?php wp_head() ?>
 	<meta charset="utf-8">
 	<title>Nexus Financial Institute</title>
@@ -56,6 +58,7 @@
 				<li><a href="<?php echo site_url('/events') ?>" class="smoothScroll">EVENTS</a></li>
 				<li><a href="<?php echo site_url('/services') ?>" class="smoothScroll">SERVICES</a></li>
 				<li><a href="<?php echo site_url('/members') ?>" class="smoothScroll">MEET THE TEAM</a></li>
+				<li><a href="<?php echo site_url('/calculation') ?>" class="smoothScroll">CALCULATE FINANCES</a></li>
 				<?php
 				if(is_user_logged_in()){
 					?>

@@ -102,12 +102,12 @@ else{
         </div>
         <div class="col-md-6 col-sm-12 contact-info">
           <h2 class="heading bold">CONTACT INFO</h2>
-          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteu sunt in culpa qui officia deserunt mollit anim id.</p>
+          <p>Contact us anytime and one of our customer service representative would get back at you as soon as possible.</p>
           <div class="col-md-6 col-sm-4">
             <h3>
               <i class="icon-envelope medium-icon wow bounceIn" data-wow-delay="0.6s"></i> EMAIL
             </h3>
-            <p>hello@company.com</p>
+            <p>nexus-institute@company.com</p>
           </div>
           <div class="col-md-6 col-sm-4">
             <h3>
@@ -134,4 +134,5 @@ else{
         </div>
       </div>
     </div>
-  </section> <?php get_footer() ?>
+  </section> 
+  <?php get_footer() ?>

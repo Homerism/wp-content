@@ -13,7 +13,6 @@
 		</div>
 	</div>		
 </section>
-
 <section id="events">
 <div class="events">
 		<?php 
@@ -53,35 +52,37 @@
 				</li>
 			</ul>
 			<?php }?>
+	<section id="gallery">
+	<div id="carousel">
+	<div class="slideImg hideLeft">
+		<img src="<?php echo get_theme_file_uri('images/gallery1.jpg') ?>">
+	</div>
+	<div class="slideImg prevLeftSecond">
+		<img src="<?php echo get_theme_file_uri('images/gallery2.jpg') ?>">
+	</div>
+	<div class="slideImg prev">
+		<img src="<?php echo get_theme_file_uri('images/gallery3.jpg') ?>">
+	</div>
+	<div class="slideImg selected">
+		<img src="<?php echo get_theme_file_uri('images/gallery4.jpg') ?>">
+	</div>
+	<div class="slideImg next">
+		<img src="<?php echo get_theme_file_uri('images/gallery5.jpg') ?>">
+	</div>
+	<div class="slideImg nextRightSecond">
+		<img src="<?php echo get_theme_file_uri('images/gallery1.jpg') ?>">
+	</div>
+	<div class="slideImg hideRight">
+		<img src="<?php echo get_theme_file_uri('images/gallery2.jpg') ?>">
+	</div>
+</div>
+</section>
+
 			<div class="center">
 				<?php custom_paginate_links(); ?>
 			</div>
         </div>
 	</section>
-	<section id="gallery">
-	<div id="carousel">
-	<div class="slideImg hideLeft">
-		<img src="https://i1.sndcdn.com/artworks-000165384395-rhrjdn-t500x500.jpg">
-	</div>
-	<div class="slideImg prevLeftSecond">
-		<img src="https://i1.sndcdn.com/artworks-000185743981-tuesoj-t500x500.jpg">
-	</div>
-	<div class="slideImg prev">
-		<img src="https://i1.sndcdn.com/artworks-000158708482-k160g1-t500x500.jpg">
-	</div>
-	<div class="slideImg selected">
-		<img src="https://i1.sndcdn.com/artworks-000062423439-lf7ll2-t500x500.jpg">
-	</div>
-	<div class="slideImg next">
-		<img src="https://i1.sndcdn.com/artworks-000028787381-1vad7y-t500x500.jpg">
-	</div>
-	<div class="slideImg nextRightSecond">
-		<img src="https://i1.sndcdn.com/artworks-000108468163-dp0b6y-t500x500.jpg">
-	</div>
-	<div class="slideImg hideRight">
-		<img src="https://i1.sndcdn.com/artworks-000064920701-xrez5z-t500x500.jpg">
-	</div>
-</div>
-	</section>
+	
 
 <?php get_footer() ?>
