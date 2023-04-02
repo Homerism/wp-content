@@ -10,7 +10,7 @@ $theParent = wp_get_post_parent_ID(get_the_ID());
 				<h1 style="text-transform: uppercase;"><?php the_title(); ?></h1>
 				<hr>
         <?php if ($theParent){ ?>
-          <a href="<?php echo site_url('/about-us'); ?>" class="smoothScroll btn btn-danger">About Us</a>
+          <a href="<?php echo get_permalink($theParent); ?>" class="smoothScroll btn btn-danger"><?php echo get_the_title($theParent); ?></a>
           <a href="#details" class="smoothScroll btn btn-default"><?php the_title(); ?></a>
           <?php } else{ ?>
             <a href="#details" class="smoothScroll btn btn-default">Read More</a>
@@ -71,8 +71,8 @@ $theParent = wp_get_post_parent_ID(get_the_ID());
           setup_postdata($child); ?>
             <li class="link"><a href="<?php echo get_the_permalink($child->ID); ?>"> <?php echo get_the_title($child->ID); ?></a></li>
          <?php 
-           }?> 
-           <li class="link"><a href="<?php echo site_url('/questions');?>">Frequently Asked Questions</a></li>
+           } ?>
+
           </ul>
            </div>
           <?php

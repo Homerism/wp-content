@@ -10,14 +10,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="keywords" content="">
 	<meta name="description" content="">
-<!--Template 2075 Digital Team http://www.tooplate.com/view/2075-digital-team-->
-	<link rel="stylesheet" href="<?php echo get_theme_file_uri().'/css/bootstrap.min.css' ?>">
-	<link rel="stylesheet" href="<?php echo get_theme_file_uri().'/css/font-awesome.min.css' ?>">
-	<link rel="stylesheet" href="<?php echo get_theme_file_uri().'/css/animate.min.css' ?>">
-	<link rel="stylesheet" href="<?php echo get_theme_file_uri().'/css/et-line-font.css' ?>">
-	<link rel="stylesheet" href="<?php echo get_theme_file_uri().'/css/nivo-lightbox.css' ?>">
-	<link rel="stylesheet" href="<?php echo get_theme_file_uri().'/css/nivo_themes/default/default.css' ?>">
-	<link rel="stylesheet" href="<?php echo get_theme_file_uri().'/css/style.css' ?>">
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -53,12 +45,14 @@
 		<div class="collapse navbar-collapse">
 			<ul class="nav navbar-nav navbar-right">
 				<li><a href="<?php echo site_url('/') ?>" class="smoothScroll">HOME</a></li>
-				<li><a href="<?php echo site_url('/about-us') ?>" class="smoothScroll">ABOUT</a></li>
+				<li><a href="<?php echo site_url('/services') ?>" class="smoothScroll">SERVICES</a></li>
+				<li><a href="<?php echo site_url('/members') ?>" class="smoothScroll">THE TEAM</a></li>
+				<li><a href="<?php echo site_url('/calculation') ?>" class="smoothScroll">CALCULATOR</a></li>
 				<li><a href="<?php echo site_url('/resources') ?>" class="smoothScroll">RESOURCES</a></li>
 				<li><a href="<?php echo site_url('/events') ?>" class="smoothScroll">EVENTS</a></li>
-				<li><a href="<?php echo site_url('/services') ?>" class="smoothScroll">SERVICES</a></li>
-				<li><a href="<?php echo site_url('/members') ?>" class="smoothScroll">MEET THE TEAM</a></li>
-				<li><a href="<?php echo site_url('/calculation') ?>" class="smoothScroll">CALCULATION</a></li>
+				<li><a href="<?php echo site_url('/about-us') ?>" class="smoothScroll">ABOUT</a></li>
+				<li><a href="<?php echo site_url('/legal') ?>" class="smoothScroll">LEGAL</a></li>
+				<!--<li><a href="<?php echo site_url('/legal') ?>" class="smoothScroll">LEGAL</a></li>-->
 				<?php
 				if(is_user_logged_in()){
 					?>

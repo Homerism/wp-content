@@ -16,16 +16,6 @@
 		</div>
 	</div>
 </footer>
-
-
-<script src="<?php echo get_theme_file_uri().'/js/jquery.js' ?>"></script>
-<script src="<?php echo get_theme_file_uri().'/js/bootstrap.min.js' ?>"></script>
-<script src="<?php echo get_theme_file_uri().'/js/smoothscroll.js' ?>"></script>
-<script src="<?php echo get_theme_file_uri().'/js/isotope.js' ?>"></script>
-<script src="<?php echo get_theme_file_uri().'/js/imagesloaded.min.js' ?>"></script>
-<script src="<?php echo get_theme_file_uri().'/js/nivo-lightbox.min.js' ?>"></script>
-<script src="<?php echo get_theme_file_uri().'/js/jquery.backstretch.min.js' ?>"></script>
-<script src="<?php echo get_theme_file_uri().'/js/wow.min.js' ?>"></script>
 <script>
 
 	// ISOTOPE FILTER
@@ -134,91 +124,91 @@
 	});
 </script>
 <script>
-var acc = document.getElementsByClassName("accordion");
-var i;
+  var acc = document.getElementsByClassName("accordion");
+  var i;
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    /* Toggle between adding and removing the "active" class,
-    to highlight the button that controls the panel */
-    this.classList.toggle("active");
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      /* Toggle between adding and removing the "active" class,
+      to highlight the button that controls the panel */
+      this.classList.toggle("active");
 
-    /* Toggle between hiding and showing the active panel */
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-  });
-}
+      /* Toggle between hiding and showing the active panel */
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
 </script>
 <script>
-	// Get carousel elements
+    // Get carousel elements
 
-var tLeftButton = $("#testimonials-l");
-var tRightButton = $("#testimonials-r");
+  var tLeftButton = $("#testimonials-l");
+  var tRightButton = $("#testimonials-r");
 
-// Get number of <li> elements in carousel
+  // Get number of <li> elements in carousel
 
-var tItemCount = document.getElementById('testimonials-ul').querySelectorAll('li').length;
+  var tItemCount = document.getElementById('testimonials-ul').querySelectorAll('li').length;
 
-// Set length based on that
+  // Set length based on that
 
-var tWidth = tItemCount * 100 + "vw";
-$(".testimonials ul").css("width", tWidth);
+  var tWidth = tItemCount * 100 + "vw";
+  $(".testimonials ul").css("width", tWidth);
 
-// Button functionality
+  // Button functionality
 
-var tPosition = 0;
-console.log(tPosition);
+  var tPosition = 0;
+  console.log(tPosition);
 
-tRightButton.click(function() {
-  if (tPosition < (tItemCount - 1)) {
-    tPosition++;
-    var m = "-" + (100 * tPosition) + "vw";
-    $(".testimonials ul").animate({
-      "left": m
-    }, 500);
-    greyButton();
+  tRightButton.click(function() {
+    if (tPosition < (tItemCount - 1)) {
+      tPosition++;
+      var m = "-" + (100 * tPosition) + "vw";
+      $(".testimonials ul").animate({
+        "left": m
+      }, 500);
+      greyButton();
+    }
+  });
+
+  tLeftButton.click(function() {
+    if (tPosition > 0) {
+      tPosition--;
+      var m = "-" + (100 * tPosition) + "vw";
+      $(".testimonials ul").animate({
+        "left": m
+      }, 500);
+      greyButton();
+    }
+  });
+
+  // Grey out buttons if not useable 
+
+  var greyButton = function() {
+    if (tPosition == 0) {
+      tLeftButton.css("opacity", "0.3");
+      tLeftButton.css("cursor", "default");
+    } else if (tPosition == (tItemCount - 1)) {
+      tRightButton.css("opacity", "0.3");
+      tRightButton.css("cursor", "default");
+    } else {
+      tRightButton.css("opacity", "1");
+      tRightButton.css("cursor", "pointer");
+      tLeftButton.css("opacity", "1");
+      tLeftButton.css("cursor", "pointer");
+    }
   }
-});
 
-tLeftButton.click(function() {
-  if (tPosition > 0) {
-    tPosition--;
-    var m = "-" + (100 * tPosition) + "vw";
-    $(".testimonials ul").animate({
-      "left": m
-    }, 500);
-    greyButton();
+  greyButton();
+
+  // And finally, if there's only one quote, kill the buttons altogether
+
+  if ( tItemCount == 1 ) {
+    $('.testimonials-control').css('display','none');
   }
-});
-
-// Grey out buttons if not useable 
-
-var greyButton = function() {
-  if (tPosition == 0) {
-    tLeftButton.css("opacity", "0.3");
-    tLeftButton.css("cursor", "default");
-  } else if (tPosition == (tItemCount - 1)) {
-    tRightButton.css("opacity", "0.3");
-    tRightButton.css("cursor", "default");
-  } else {
-    tRightButton.css("opacity", "1");
-    tRightButton.css("cursor", "pointer");
-    tLeftButton.css("opacity", "1");
-    tLeftButton.css("cursor", "pointer");
-  }
-}
-
-greyButton();
-
-// And finally, if there's only one quote, kill the buttons altogether
-
-if ( tItemCount == 1 ) {
-  $('.testimonials-control').css('display','none');
-}
 
 </script>
 <script>

@@ -216,7 +216,9 @@
         </div>
         <div class="col-md-6 col-sm-12 contact-info">
           <h2 class="heading bold">CONTACT INFO</h2>
-          <p>Contact us anytime and one of our customer service representative would get back at you as soon as possible.</p>
+          <p>Contact us anytime and one of our customer service representative would get back at you as soon as possible.
+			<a href="<?php echo site_url('/questions');?>">Frequently Asked Questions</a>
+		  </p>
           <div class="col-md-6 col-sm-4">
             <h3>
               <i class="icon-envelope medium-icon wow bounceIn" data-wow-delay="0.6s"></i> EMAIL

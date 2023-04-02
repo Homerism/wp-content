@@ -8,6 +8,7 @@
 				<h1>MEET THE NEXUS TEAM</h1>
 				<hr>
 				<a href="#team" class="smoothScroll btn btn-danger">Team Members</a>
+				<a href="#faq" class="smoothScroll btn btn-default">F.A.Q</a>
 			</div>
 		</div>
 	</div>		
@@ -53,5 +54,22 @@
 				<?php custom_paginate_links(); ?>
 			</div>
 </section>
+<h2 id="faq" style="text-align:center;">Frequently Asked Questions</h2>
+
+<?php 
+$questions = new WP_Query(array(
+	'posts_per_page' => -1,
+	'post_type' => 'question'
+	));
+	
+if($questions){
+while($questions->have_posts()){
+	$questions->the_post();
+	?>
+	<button class="accordion"><?php the_title(); ?></button>
+	<div class="panel">
+		<p><?php the_content(); ?></p>
+	</div>
+<?php }}?>
 
 <?php get_footer() ?>
