@@ -1155,4 +1155,106 @@ div.positionBtn{
   border: 0px;
 }
 
+
 /*Breadcrumb */
+
+.box {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+}
+
+.link {
+  border-bottom: 1px solid #eee;
+}
+
+.link a {
+  text-decoration: none;
+  background-color: #03AEDA;
+  color: #fff;
+  padding: 10px 15px;
+  font-size: 18px;
+  display: block;
+  transition: margin-left .29s ease;
+}
+
+.link a:hover {
+  background-color: #444;
+  margin-left: 15px;
+}
+
+.side {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.crumb {
+  float: left;
+  border-right:1px solid #bbb;
+}
+
+.crumb:last-child {
+  border-right: none;
+}
+
+.crumb a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.crumb a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #03AEDA;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #03AEDA;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 30px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  position:relative;
+  left:33%;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}

@@ -58,7 +58,7 @@
 				<li><a href="<?php echo site_url('/events') ?>" class="smoothScroll">EVENTS</a></li>
 				<li><a href="<?php echo site_url('/services') ?>" class="smoothScroll">SERVICES</a></li>
 				<li><a href="<?php echo site_url('/members') ?>" class="smoothScroll">MEET THE TEAM</a></li>
-				<li><a href="<?php echo site_url('/calculation') ?>" class="smoothScroll">CALCULATE FINANCES</a></li>
+				<li><a href="<?php echo site_url('/calculation') ?>" class="smoothScroll">CALCULATION</a></li>
 				<?php
 				if(is_user_logged_in()){
 					?>

@@ -21,25 +21,25 @@
 </section>
 </div><!-- /.post-content -->
 <div class="split right">
-<div class="widget widget-recent-posts">
-<h4 class="widget-title">Recent posts</h4>
-<ul class="list-unstyled">
+<div>
+<h4>Recent posts</h4>
+<ul class="box">
         <?php $posts = get_posts();?>
         <?php foreach( $posts as $post ) {
-            echo '<li><a href="'.get_permalink($post->ID).'">' . $post->post_title . '</a></li>'; } ?>
-            <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+            echo '<li class="link"><a href="'.get_permalink($post->ID).'">'.$post->post_title.'</a></li>';
+             } ?>
     </ul>
 </div><!-- /Recent-posts -->
-<div class="widget widget-categories">
-<h4 class="widget-title">All Categories</h4>
-<ul class="list-unstyled">
-        <?php $categories = get_categories( array(
+<div>
+<h4>All Categories</h4>
+<ul class="box">
+        <?php $categories = get_categories(array(
             'orderby' => 'name',
-            'order'   => 'ASC'
+            'order' => 'ASC'
             ) );
             ?>
             <?php foreach( $categories as $category ) {
-                echo '<li><a href="' . get_category_link($category->term_id) . '">' . $category->name .'<span></span></a></li>';
+                echo '<li class="link"><a href="' . get_category_link($category->term_id) . '">' . $category->name .'</a></li>';
                 } ?>
     </ul>  
 </div><!-- /All-categories -->

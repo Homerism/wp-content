@@ -19,7 +19,6 @@
 		<div class="row">
 		<div class="col-md-12 col-sm-12">
 				<div class="section-title">
-					<strong>04</strong>
 					<h1 class="heading bold">OUR SERVICES</h1>
 					<hr>
 				</div>

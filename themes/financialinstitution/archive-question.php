@@ -13,6 +13,15 @@
 		</div>
 	</div>		
 </section>
+<div> 
+    <!---Parent If statement starts-->
+<ul class="side">
+<li class="crumb"><a class="active" href="<?php echo site_url('/about-us'); ?>">
+<i class="fa fa-home" aria-hidden="true"></i> Back to About Us</a></li>
+<li class="crumb"><a href="#details">F.A.Q</a></li>
+</ul>
+    <!--Parent if statment ends-->
+  </div>
 <section id="question">
 <?php while(have_posts()){
 	the_post();

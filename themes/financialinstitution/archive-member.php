@@ -19,7 +19,6 @@
 		<div class="row">
 			<div class="col-md-12 col-sm-12">
 				<div class="section-title">
-					<strong>05</strong>
 					<h1 class="heading bold">TALENTED TEAM</h1>
 					<hr>
 				</div>
